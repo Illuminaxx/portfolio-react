@@ -151,7 +151,7 @@ export default class Portfolio extends Component {
                         <div className="description-box">
                             <h4>Custom progressbar</h4>
                             <p>A custom progress bar realized with hooks react.</p>
-                            <span className="categories"><i className="fa fa-tag" />Web Design</span>
+                            <span className="categories"><i className="fa fa-tag" />Web design</span>
                         </div>
                         <div className="link-box">
                             <a href="https://github.com/Illuminaxx/custom-progress-react-bar" target="_blank" rel="noopener noreferrer">Details</a>
@@ -163,7 +163,7 @@ export default class Portfolio extends Component {
                         <div className="description-box">
                             <h4>Progress Bar</h4>
                             <p>Progress bar inspiring by Collect UI Users</p>
-                            <span className="categories"><i className="fa fa-tag" />Web Intégration, Webdesign</span>
+                            <span className="categories"><i className="fa fa-tag" />Web Intégration, Web design</span>
                         </div>
                         <div className="link-box">
                             <a href="https://github.com/Illuminaxx/progressbar" target="_blank" rel="noopener noreferrer">Details</a>
@@ -197,12 +197,13 @@ export default class Portfolio extends Component {
                     <div id="modal-07" className="popup-modal mfp-hide">
                         <img className="scale-with-grid" src="images/portfolio/modals/m-piano.jpg" alt="" />
                         <div className="description-box">
-                            <h4>Piano</h4>
+                            <h4>Piano <a href="https://piano-javascript.netlify.com" target="_blank" rel="noopener noreferrer">(Demo)</a></h4>
                             <p>A piano from scratch with HTML CSS Javascript and audio MP3.</p>
                             <span className="categories"><i className="fa fa-tag" />Web Development</span>
                         </div>
                         <div className="link-box">
                             <a href="https://github.com/Illuminaxx/PianoJS" target="_blank" rel="noopener noreferrer">Details</a>
+                            
                             <a className="popup-modal-dismiss">Close</a>
                         </div>
                     </div>

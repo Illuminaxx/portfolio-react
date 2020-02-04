@@ -18,6 +18,7 @@ export default class Contact extends Component {
                             resumeData.contact && resumeData.contact.map(item => {
                                 return(
                                     <div className="widget">
+                                        <p>Linkedin :</p>
                                         <a href={item.url} target="_blank">
                                           <i className={item.className}/>
                                         </a>
