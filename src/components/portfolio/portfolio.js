@@ -120,6 +120,20 @@ export default class Portfolio extends Component {
                                     </a>
                                 </div>
                             </div>
+                            <div className="columns portfolio-item">
+                                <div className="item-wrap">
+                                    <a href="#modal-09" title>
+                                        <img alt="" src="images/portfolio/drumb.jpg" />
+                                        <div className="overlay">
+                                            <div className="portfolio-item-meta">
+                                                <h5>Drumb</h5>
+                                                <p>Web Development, Web Intégration</p>
+                                            </div>
+                                        </div>
+                                        <div className="link-icon"><i className="icon-plus" /></div>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div id="modal-01" className="popup-modal mfp-hide">
@@ -203,7 +217,6 @@ export default class Portfolio extends Component {
                         </div>
                         <div className="link-box">
                             <a href="https://github.com/Illuminaxx/PianoJS" target="_blank" rel="noopener noreferrer">Details</a>
-                            
                             <a className="popup-modal-dismiss">Close</a>
                         </div>
                     </div>
@@ -216,6 +229,18 @@ export default class Portfolio extends Component {
                         </div>
                         <div className="link-box">
                             <a href="https://github.com/Illuminaxx/spinner-loader" target="_blank" rel="noopener noreferrer">Details</a>
+                            <a className="popup-modal-dismiss">Close</a>
+                        </div>
+                    </div>
+                    <div id="modal-09" className="popup-modal mfp-hide">
+                        <img className="scale-with-grid" src="images/portfolio/modals/m-piano.jpg" alt="" />
+                        <div className="description-box">
+                            <h4>Drumb application <a href="https://drumb-music.netlify.com" target="_blank" rel="noopener noreferrer">(Demo)</a></h4>
+                            <p>A taping application write in HTML/CSS/Javascript.</p>
+                            <span className="categories"><i className="fa fa-tag" />Web Development, Web Intégration</span>
+                        </div>
+                        <div className="link-box">
+                            <a href="https://github.com/Illuminaxx/drumb" target="_blank" rel="noopener noreferrer">Details</a>
                             <a className="popup-modal-dismiss">Close</a>
                         </div>
                     </div>
