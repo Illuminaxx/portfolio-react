@@ -233,7 +233,7 @@ export default class Portfolio extends Component {
                         </div>
                     </div>
                     <div id="modal-09" className="popup-modal mfp-hide">
-                        <img className="scale-with-grid" src="images/portfolio/modals/m-piano.jpg" alt="" />
+                        <img className="scale-with-grid" src="images/portfolio/modals/m-drumb.jpg" alt="" />
                         <div className="description-box">
                             <h4>Drumb application <a href="https://drumb-music.netlify.com" target="_blank" rel="noopener noreferrer">(Demo)</a></h4>
                             <p>A taping application write in HTML/CSS/Javascript.</p>
