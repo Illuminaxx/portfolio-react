@@ -134,6 +134,34 @@ export default class Portfolio extends Component {
                                     </a>
                                 </div>
                             </div>
+                            <div className="columns portfolio-item">
+                                <div className="item-wrap">
+                                    <a href="#modal-10" title>
+                                        <img alt="" src="images/portfolio/homepage.jpg" />
+                                        <div className="overlay">
+                                            <div className="portfolio-item-meta">
+                                                <h5>PoC Gatsby Ecommerce</h5>
+                                                <p>Web Development, Web Intégration, Ecommerce</p>
+                                            </div>
+                                        </div>
+                                        <div className="link-icon"><i className="icon-plus" /></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div className="columns portfolio-item">
+                                <div className="item-wrap">
+                                    <a href="#modal-11" title>
+                                        <img alt="" src="images/portfolio/landingpage.jpg" />
+                                        <div className="overlay">
+                                            <div className="portfolio-item-meta">
+                                                <h5>PoC HUGO Ecommerce</h5>
+                                                <p>Web Development, Web Intégration, Ecommerce</p>
+                                            </div>
+                                        </div>
+                                        <div className="link-icon"><i className="icon-plus" /></div>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div id="modal-01" className="popup-modal mfp-hide">
@@ -241,6 +269,30 @@ export default class Portfolio extends Component {
                         </div>
                         <div className="link-box">
                             <a href="https://github.com/Illuminaxx/drumb" target="_blank" rel="noopener noreferrer">Details</a>
+                            <a className="popup-modal-dismiss">Close</a>
+                        </div>
+                    </div>
+                    <div id="modal-10" className="popup-modal mfp-hide">
+                        <img className="scale-with-grid" src="images/portfolio/modals/m-homepage.jpg" alt="" />
+                        <div className="description-box">
+                            <h4>Gatsby Ecommerce application <a href="https://pooc-gastby-ecommerce.netlify.com/" target="_blank" rel="noopener noreferrer">(Demo)</a></h4>
+                            <p>A simple PoC of ecommerce generate with Gatsby and manage with CosmicJS</p>
+                            <span className="categories"><i className="fa fa-tag" />Web Development, Web Intégration, Ecommerce</span>
+                        </div>
+                        <div className="link-box">
+                            <a href="https://github.com/Illuminaxx/POOC-Gatsby" target="_blank" rel="noopener noreferrer">Details</a>
+                            <a className="popup-modal-dismiss">Close</a>
+                        </div>
+                    </div>
+                    <div id="modal-11" className="popup-modal mfp-hide">
+                        <img className="scale-with-grid" src="images/portfolio/modals/m-landingpage.jpg" alt="" />
+                        <div className="description-box">
+                            <h4>HUGO Ecommerce application <a href="https://poc-hugo-ecommerce.netlify.com/" target="_blank" rel="noopener noreferrer">(Demo)</a></h4>
+                            <p>A simple PoC of ecommerce generate with HUGO and cart create with Snipcart</p>
+                            <span className="categories"><i className="fa fa-tag" />Web Development, Web Intégration, Ecommerce</span>
+                        </div>
+                        <div className="link-box">
+                            <a href="https://github.com/Illuminaxx/ecommerce-hugo-snipcart" target="_blank" rel="noopener noreferrer">Details</a>
                             <a className="popup-modal-dismiss">Close</a>
                         </div>
                     </div>
