@@ -162,6 +162,34 @@ export default class Portfolio extends Component {
                                     </a>
                                 </div>
                             </div>
+                            <div className="columns portfolio-item">
+                                <div className="item-wrap">
+                                    <a href="#modal-12" title>
+                                        <img alt="" src="images/portfolio/blog.jpg" />
+                                        <div className="overlay">
+                                            <div className="portfolio-item-meta">
+                                                <h5>PoC blog with Gatsby</h5>
+                                                <p>Web Development</p>
+                                            </div>
+                                        </div>
+                                        <div className="link-icon"><i className="icon-plus" /></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div className="columns portfolio-item">
+                                <div className="item-wrap">
+                                    <a href="#modal-13" title>
+                                        <img alt="" src="images/portfolio/portfolio.jpg" />
+                                        <div className="overlay">
+                                            <div className="portfolio-item-meta">
+                                                <h5>Portfolio</h5>
+                                                <p>Web Development</p>
+                                            </div>
+                                        </div>
+                                        <div className="link-icon"><i className="icon-plus" /></div>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div id="modal-01" className="popup-modal mfp-hide">
@@ -293,6 +321,30 @@ export default class Portfolio extends Component {
                         </div>
                         <div className="link-box">
                             <a href="https://github.com/Illuminaxx/ecommerce-hugo-snipcart" target="_blank" rel="noopener noreferrer">Details</a>
+                            <a className="popup-modal-dismiss">Close</a>
+                        </div>
+                    </div>
+                    <div id="modal-12" className="popup-modal mfp-hide">
+                        <img className="scale-with-grid" src="images/portfolio/modals/m-blog.jpg" alt="" />
+                        <div className="description-box">
+                            <h4>Blog (PoC)  <a href="https://poc-hugo-ecommerce.netlify.com/" target="_blank" rel="noopener noreferrer">(Demo)</a></h4>
+                            <p>A simple PoC Blog generate with gatsby</p>
+                            <span className="categories"><i className="fa fa-tag" />Web Development</span>
+                        </div>
+                        <div className="link-box">
+                            <a href="https://github.com/Illuminaxx/my-pro-blog" target="_blank" rel="noopener noreferrer">Details</a>
+                            <a className="popup-modal-dismiss">Close</a>
+                        </div>
+                    </div>
+                    <div id="modal-13" className="popup-modal mfp-hide">
+                        <img className="scale-with-grid" src="images/portfolio/modals/m-portfolio.jpg" alt="" />
+                        <div className="description-box">
+                            <h4>Professional portfolio <a href="https://aurelien-hennuyer.netlify.com/" target="_blank" rel="noopener noreferrer">(Demo)</a></h4>
+                            <p>A professional portfolio create with ReactJS . You are in this portfolio</p>
+                            <span className="categories"><i className="fa fa-tag" />Web Development</span>
+                        </div>
+                        <div className="link-box">
+                            <a href="https://github.com/Illuminaxx/portfolio-react" target="_blank" rel="noopener noreferrer">Details</a>
                             <a className="popup-modal-dismiss">Close</a>
                         </div>
                     </div>
