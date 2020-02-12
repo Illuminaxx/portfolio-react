@@ -190,6 +190,20 @@ export default class Portfolio extends Component {
                                     </a>
                                 </div>
                             </div>
+                            <div className="columns portfolio-item">
+                                <div className="item-wrap">
+                                    <a href="#modal-14" title>
+                                        <img alt="" src="images/portfolio/ecommerce.jpg" />
+                                        <div className="overlay">
+                                            <div className="portfolio-item-meta">
+                                                <h5>Ecommerce with React</h5>
+                                                <p>Web Development, Web Intégration</p>
+                                            </div>
+                                        </div>
+                                        <div className="link-icon"><i className="icon-plus" /></div>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div id="modal-01" className="popup-modal mfp-hide">
@@ -345,6 +359,18 @@ export default class Portfolio extends Component {
                         </div>
                         <div className="link-box">
                             <a href="https://github.com/Illuminaxx/portfolio-react" target="_blank" rel="noopener noreferrer">Details</a>
+                            <a className="popup-modal-dismiss">Close</a>
+                        </div>
+                    </div>
+                    <div id="modal-14" className="popup-modal mfp-hide">
+                        <img className="scale-with-grid" src="images/portfolio/modals/m-ecommerce.jpg" alt="" />
+                        <div className="description-box">
+                            <h4>Ecommerce with React <a href="https://shop-geek-bazar.netlify.com/" target="_blank" rel="noopener noreferrer">(Demo)</a></h4>
+                            <p>An ecommerce web application create with React and using lambda netlify and Stripe for manage payments .</p>
+                            <span className="categories"><i className="fa fa-tag" />Web Development, Web Intégration</span>
+                        </div>
+                        <div className="link-box">
+                            <a href="https://github.com/Illuminaxx/ecommerce" target="_blank" rel="noopener noreferrer">Details</a>
                             <a className="popup-modal-dismiss">Close</a>
                         </div>
                     </div>
