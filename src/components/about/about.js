@@ -20,8 +20,7 @@ export default class About extends Component {
                                 <p className="address">
                                     <span>{resumeData.name}</span><br />
                                     <span>{resumeData.address}<br />
-                    {resumeData.zipCode}
-                  </span><br />
+                                          {resumeData.zipCode}</span><br />
                                     <span>{resumeData.numberPhone}</span><br />
                                     <span>{resumeData.mailPro}</span>
                                 </p>
@@ -29,7 +28,7 @@ export default class About extends Component {
                             <div className="columns download">
                                 <p>
                                 
-                                    <a href={pdf} className="button" target="_blank"><i className="fa fa-download" />Download Resume</a>
+                                    <a href={pdf} className="button" download="CV_aurelien-hennuyer.pdf"><i className="fa fa-download" />Obtenir le CV</a>
                                 </p>
                             </div>
                         </div>
