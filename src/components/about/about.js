@@ -12,7 +12,7 @@ export default class About extends Component {
                         <img className="profile-pic" src="images/profilepic.jpg" alt="" />
                     </div>
                     <div className="nine columns main-col">
-                        <h2>About Me</h2>
+                        <h2>A Propos</h2>
                         <p>{resumeData.aboutme}</p>
                         <div className="row">
                             <div className="columns contact-details">
@@ -27,7 +27,6 @@ export default class About extends Component {
                             </div>
                             <div className="columns download">
                                 <p>
-                                
                                     <a href={pdf} className="button" download="CV_aurelien-hennuyer.pdf"><i className="fa fa-download" />Obtenir le CV</a>
                                 </p>
                             </div>
