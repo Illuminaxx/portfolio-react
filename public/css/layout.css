@@ -34,7 +34,6 @@ header {
    min-height: 500px;
    width: 100%;
    background: #161415 url(../images/header.jpg) no-repeat top center;
-   opacity: 0.7;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
