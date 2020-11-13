@@ -33,7 +33,7 @@ header {
    height: 800px;
    min-height: 500px;
    width: 100%;
-   background: #161415 url(../images/header.jpg) no-repeat top center;
+   background: #161415 url(../images/header-background.jpg) no-repeat top center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
@@ -298,9 +298,9 @@ ul#nav li.current a { color: #F06000; }
 .bars li {
    position: relative;
   	margin-bottom: 60px;
-  	background: #d8d8d8;
+  	background: #ccc;
   	height: 42px;
-  	border-radius: 50px;
+  	border-radius: 3px;
 }
 .bars li em {
 	font: 15px 'opensans-bold', sans-serif;
@@ -315,96 +315,102 @@ ul#nav li.current a { color: #F06000; }
    position: absolute;
    left: 0;
    top: 0;
-   background: linear-gradient(to left, #F2709C, #FF9472);
+
    margin: 0;
    padding-right: 24px;
-  	/*background: #313131;*/
+  	background: #313131;
    display: inline-block;
   	height: 42px;
    line-height: 42px;
-   border-radius: 50px;
+   border-radius: 3px 0 0 3px;
 }
-
-.angular {
-  	width: 60%;
-  	-moz-animation: angular 2s ease;
-  	-webkit-animation: angular 2s ease;
+/*
+.git {
+  	-moz-animation: git 2s ease;
+  	-webkit-animation: git 2s ease;
 }
-.react {
-  	width: 60%;
-  	-moz-animation: react 2s ease;
-  	-webkit-animation: react 2s ease;
+.illustrator {
+  	-moz-animation: illustrator 2s ease;
+  	-webkit-animation: illustrator 2s ease;
 }
-.nodejs {
-  	width: 50%;
-  	-moz-animation: nodejs 2s ease;
-  	-webkit-animation: nodejs 2s ease;
+.reactjs {
+  	-moz-animation: reactjs 2s ease;
+  	-webkit-animation: reactjs 2s ease;
 }
 .css {
-  	width: 50%;
   	-moz-animation: css 2s ease;
   	-webkit-animation: css 2s ease;
 }
 .html5 {
-  	width: 80%;
   	-moz-animation: html5 2s ease;
   	-webkit-animation: html5 2s ease;
 }
-.php {
-  	width: 50%;
-  	-moz-animation: php 2s ease;
-  	-webkit-animation: php 2s ease;
+.vuejs {
+  	-moz-animation: vuejs 2s ease;
+  	-webkit-animation: vuejs 2s ease;
+}
+.mongodb {
+  	-moz-animation: mongodb 2s ease;
+  	-webkit-animation: mongodb 2s ease;
 }
 
-@-moz-keyframes angular {
+@-moz-keyframes git {
   0%   { width: 0px;  }
   100% { width: 60%;  }
 }
-@-moz-keyframes react {
+@-moz-keyframes illustrator {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
+  100% { width: 55%;  }
 }
-@-moz-keyframes nodejs {
+@-moz-keyframes reactjs {
   0%   { width: 0px;  }
   100% { width: 50%;  }
 }
 @-moz-keyframes css {
   0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 90%;  }
 }
 @-moz-keyframes html5 {
   0%   { width: 0px;  }
   100% { width: 80%;  }
 }
-@-moz-keyframes php {
+@-moz-keyframes vuejs {
   0%   { width: 0px;  }
   100% { width: 50%;  }
 }
+@-moz-keyframes mongodb {
+  0%   { width: 0px;  }
+  100% { width: 80%;  }
+}
 
-@-webkit-keyframes angular {
+@-webkit-keyframes photoshop {
   0%   { width: 0px;  }
   100% { width: 60%;  }
 }
-@-webkit-keyframes react {
+@-webkit-keyframes illustrator {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
+  100% { width: 55%;  }
 }
-@-webkit-keyframes nodejs {
+@-webkit-keyframes reactjs {
   0%   { width: 0px;  }
   100% { width: 50%;  }
 }
 @-webkit-keyframes css {
   0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 90%;  }
 }
 @-webkit-keyframes html5 {
   0%   { width: 0px;  }
   100% { width: 80%;  }
 }
-@-webkit-keyframes php {
+@-webkit-keyframes vuejs {
   0%   { width: 0px;  }
   100% { width: 50%;  }
 }
+@-webkit-keyframes mongodb {
+  0%   { width: 0px;  }
+  100% { width: 80%;  }
+}  */
 
 /* ------------------------------------------------------------------ */
 /* e. Portfolio Section
@@ -424,10 +430,16 @@ ul#nav li.current a { color: #F06000; }
    color: #95A3A3;
 }
 
+#portfolio-wrapper {
+   display: flex;
+   flex-wrap: wrap;
+}
+
 /* Portfolio Content */
 #portfolio-wrapper .columns { margin-bottom: 36px; }
 .portfolio-item .item-wrap {
    background: #fff;
+
    overflow: hidden;
    position: relative;
 
@@ -543,7 +555,7 @@ ul#nav li.current a { color: #F06000; }
 .popup-modal .link-box {
    padding: 18px 36px;
    background: #111;
-   text-align: center;
+   text-align: left;
 }
 .popup-modal .link-box a {
    color: #fff;
@@ -551,7 +563,6 @@ ul#nav li.current a { color: #F06000; }
 	text-transform: uppercase;
    letter-spacing: 3px;
    cursor: pointer;
-   margin-right: 2px;
 }
 .popup-modal a:hover {	color: #00CCCC; }
 .popup-modal a.popup-modal-dismiss { margin-left: 24px; }
@@ -631,7 +642,7 @@ call-to-action .button {
    color: #0D0D0D;
 }
 #call-to-action p span {
-	font-family: 'opensans-semibold', sans-serif; 
+	font-family: 'opensans-semibold', sans-serif;
 	color: #D8D8D8;
 }
 
@@ -655,7 +666,7 @@ call-to-action .button {
    padding-bottom: 66px;
 }
 #testimonials h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;   
+   font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 3px;
    color: #fff;
@@ -1004,4 +1015,3 @@ footer .social-links li:first-child { margin-left: 0; }
  	border-radius: 100%;
 }
 #go-top a:hover { background-color: #0F9095; }
-
