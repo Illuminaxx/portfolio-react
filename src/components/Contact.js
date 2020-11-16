@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import axios from 'axios';
+
 
 const Contact = ({ data }) => {
   const [name, setName] = useState('');
@@ -6,10 +8,25 @@ const Contact = ({ data }) => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   
+  const [result, setResult] = useState(null)
 
-  const handleClick = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    window.open(`mailto:${email}?subject=${subject}&body=${name}: ${message}`);
+    axios.post('/send', {name, subject, email, message})
+    .then(response => {
+      setResult(response.data);
+      setName('')
+      setSubject('')
+      setEmail('')
+      setMessage('')
+    })
+    .catch(() => {
+      setResult({
+        success: false,
+        message: 'Try again !'
+      })
+    })
+    //window.open(`mailto:${email}?subject=${subject}&body=${name}: ${message}`);
   };
 
   return (
@@ -28,7 +45,12 @@ const Contact = ({ data }) => {
 
       <div className="row">
         <div className="eight columns">
-          <form id="contactForm" name="contactForm">
+          {result && (
+            <p className={`${result.success ? 'success' : 'error'}`}>
+              {result.message}
+            </p>
+          )}
+          <form id="contactForm" name="contactForm" onSubmit={sendEmail}>
             <fieldset>
               <div>
                 <label htmlFor="contactName">
@@ -78,14 +100,14 @@ const Contact = ({ data }) => {
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   cols="50"
-                  rows="15"
+                  rows="7"
                   id="contactMessage"
                   name="contactMessage"
                 ></textarea>
               </div>
 
               <div>
-                <button type="submit" onClick={handleClick} className="submit">
+                <button type="submit"  className="submit">
                   Submit
                 </button>
                 <span id="image-loader">
