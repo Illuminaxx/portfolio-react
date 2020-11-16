@@ -10,12 +10,10 @@ exports.handler = function(event, context, callback) {
     let transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
         port: 465,
-        tls: {
-            rejectUnauthorized: false
-        },
-        auth:{
-         user: process.env.email,
-         pass: process.env.password
+        secure: true,
+        auth: {
+            user: process.env.email,
+            pass: process.env.password
         }
     });
 
