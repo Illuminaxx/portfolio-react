@@ -9,22 +9,16 @@ const buildPath = path.join(__dirname, "..", "build");
 app.use(express.json());
 app.use(express.static(buildPath));
 
-app.post("/send", (req, res) => {
+app.post("/api/send", (req, res) => {
   try {
     const mailOptions = {
-      //from: req.body.email, // sender address
+      from: req.body.email, // sender address
       to: process.env.email, // list of receivers
       subject: req.body.subject, // Subject line
       html: `
-        <p>You have a new contact request.</p>
-        <h3>Contact Details</h3>
-        <ul>
-          <li>Name: ${req.body.name}</li>
-          <li>Email: ${req.body.email}</li>
-          <li>Subject: ${req.body.subject}</li>
-          <li>Message: ${req.body.message}</li>
-        </ul>
-        `,
+        <h3>Email from ${req.body.name} <${req.body.email}></h3>
+        <p>${req.body.message}</p>
+        `
     };
 
     transporter.sendMail(mailOptions, function (err, info) {

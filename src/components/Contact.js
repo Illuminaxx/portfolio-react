@@ -12,7 +12,7 @@ const Contact = ({ data }) => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    axios.post('/send', {name, subject, email, message})
+    axios.post('/api/send', {name, subject, email, message})
     .then(response => {
       setResult(response.data);
       setName('')
