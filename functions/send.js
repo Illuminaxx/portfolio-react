@@ -16,7 +16,8 @@ exports.handler = function(event, context, callback) {
             user: process.env.email,
             pass: process.env.password,
             clientId: process.env.client_id,
-            clientSecret: process.env.client_secret
+            clientSecret: process.env.client_secret,
+            refreshToken: process.env.refresh_token
         }
     });
 
