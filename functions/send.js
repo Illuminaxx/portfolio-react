@@ -15,9 +15,9 @@ exports.handler = function(event, context, callback) {
             type: 'OAuth2',
             user: process.env.email,
             pass: process.env.password,
-            clientId: process.env.client_id,
-            clientSecret: process.env.client_secret,
-            refreshToken: process.env.refresh_token
+            clientId: process.env.CLIENT_ID,
+            clientSecret: process.env.CLIENT_SECRET,
+            refreshToken: process.env.REFRESH_TOKEN
         }
     });
 
