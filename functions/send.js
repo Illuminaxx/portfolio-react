@@ -9,11 +9,14 @@ exports.handler = function(event, context, callback) {
 
     let transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
-        port: 587,
-        secure: false,
+        port: 465,
+        secure: true,
         auth: {
+            type: 'OAuth2',
             user: process.env.email,
-            pass: process.env.password
+            pass: process.env.password,
+            clientId: process.env.client_id,
+            clientSecret: process.env.client_secret
         }
     });
 
