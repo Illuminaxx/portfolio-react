@@ -13,7 +13,7 @@ app.post("/api/send", (req, res) => {
   try {
     const mailOptions = {
       from: req.body.email, // sender address
-      to: process.env.email, // list of receivers
+      to: process.env.G_EMAIL, // list of receivers
       subject: req.body.subject + ' ' + new Date().toLocaleString(), // Subject line
       html: `
           <!DOCTYPE html>

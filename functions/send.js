@@ -24,7 +24,7 @@ exports.handler = function(event, context, callback) {
 
     transporter.sendMail({
         from: data.email,
-        to: process.env.email,
+        to: process.env.G_EMAIL,
         subject: data.subject + ' ' + new Date().toLocaleString(),
         html: `
             <!DOCTYPE html>
