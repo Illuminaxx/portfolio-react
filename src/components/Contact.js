@@ -33,7 +33,7 @@ const Contact = ({ data }) => {
       <div className="row section-head">
         <div className="two columns header-col">
           <h1>
-            <span>Get In Touch.</span>
+            <span>Contactez-moi</span>
           </h1>
         </div>
 
@@ -53,7 +53,7 @@ const Contact = ({ data }) => {
             <fieldset>
               <div>
                 <label htmlFor="contactName">
-                  Name <span className="required">*</span>
+                  Nom <span className="required">*</span>
                 </label>
                 <input
                   value={name}
@@ -80,7 +80,7 @@ const Contact = ({ data }) => {
               </div>
 
               <div>
-                <label htmlFor="contactSubject">Subject</label>
+                <label htmlFor="contactSubject">Sujet</label>
                 <input
                   value={subject}
                   onChange={(e) => setSubject(e.target.value)}
@@ -107,7 +107,7 @@ const Contact = ({ data }) => {
 
               <div>
                 <button type="submit" className="submit">
-                  <i className="fa fa-envelope"></i> Submit
+                  <i className="fa fa-envelope"></i> Envoyer
                 </button>
                 <span id="image-loader">
                   <img alt="" src="images/loader.gif" />

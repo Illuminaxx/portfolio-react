@@ -23,12 +23,12 @@ class About extends Component {
             <img className="profile-pic"  src={profilepic} alt="Aurelien Hennuyer profile pic" />
          </div>
          <div className="nine columns main-col">
-            <h2>About Me</h2>
+            <h2>A propos</h2>
 
             <p>{bio}</p>
             <div className="row">
                <div className="columns contact-details">
-                  <h2>Contact Details</h2>
+                  <h2>Coordonnées</h2>
                   <p className="address">
 						   <span>{name}</span><br />
 						   <span>{street}<br />
@@ -40,7 +40,7 @@ class About extends Component {
                </div>
                <div className="columns download">
                   <p>
-                     <a href={pdf} className="button" download="CV_aurelien-hennuyer.pdf"><i className="fa fa-download"></i>Download Resume</a>
+                     <a href={pdf} className="button" download="CV_aurelien-hennuyer.pdf"><i className="fa fa-download"></i>Obtenir mon CV</a>
                   </p>
                </div>
             </div>

@@ -13,8 +13,8 @@ exports.handler = function(event, context, callback) {
         secure: true,
         auth: {
             type: 'OAuth2',
-            user: process.env.email,
-            pass: process.env.password,
+            user: process.env.G_EMAIL,
+            pass: process.env.G_PASSWORD,
             clientId: process.env.CLIENT_ID,
             clientSecret: process.env.CLIENT_SECRET,
             refreshToken: process.env.REFRESH_TOKEN,
@@ -95,7 +95,7 @@ exports.handler = function(event, context, callback) {
             statusCode: 200,
             body: JSON.stringify({
                 'result': 'success',
-                'message': 'Thanks for contacting us. We will get back to you shortly'
+                'message': 'Merci ! Nous vous recontacterons sous peu'
             })
         });
         }

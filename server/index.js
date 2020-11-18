@@ -82,19 +82,19 @@ app.post("/api/send", (req, res) => {
       if (err) {
         res.status(500).send({
           success: false,
-          message: "Something went wrong. Try again later",
+          message: "Une erreur s'est produite. Réessayez plus tard",
         });
       } else {
         res.send({
           success: true,
-          message: "Thanks for contacting us. We will get back to you shortly",
+          message: "Merci ! Nous vous recontacterons sous peu",
         });
       }
     });
   } catch (error) {
     res.status(500).send({
       success: false,
-      message: "Something went wrong. Try again later",
+      message: "Une erreur s'est produite. Réessayez plus tard",
     });
   }
 });
