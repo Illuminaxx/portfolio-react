@@ -26,7 +26,6 @@ const Contact = ({ data }) => {
         message: 'Try again !'
       })
     })
-    //window.open(`mailto:${email}?subject=${subject}&body=${name}: ${message}`);
   };
 
   return (
@@ -107,8 +106,8 @@ const Contact = ({ data }) => {
               </div>
 
               <div>
-                <button type="submit"  className="submit">
-                  Submit
+                <button type="submit" className="submit">
+                  <i className="fa fa-envelope"></i> Submit
                 </button>
                 <span id="image-loader">
                   <img alt="" src="images/loader.gif" />
@@ -116,17 +115,11 @@ const Contact = ({ data }) => {
               </div>
             </fieldset>
           </form>
-
-          <div id="message-warning"> Error boy</div>
-          <div id="message-success">
-            <i className="fa fa-check"></i>Your message was sent, thank you!
-            <br />
-          </div>
         </div>
 
         <aside className="four columns footer-widgets">
           <div className="widget widget_contact">
-            <h4>Address and Phone</h4>
+            <h4>Coordonnées</h4>
             <p className="address">
               {data?.name}
               <br />
@@ -136,8 +129,6 @@ const Contact = ({ data }) => {
               <span>{data?.phone}</span>
             </p>
           </div>
-
-          <div className="widget widget_tweets"></div>
         </aside>
       </div>
     </section>
