@@ -105,6 +105,42 @@
   "portfolio": {
       "projects": [
         {
+            "title": "Gatsby Ecommerce application",
+            "category": "A simple PoC of ecommerce generate with Gatsby and manage with CosmicJS",
+            "image": "homepage.jpg",
+            "url": "https://github.com/Illuminaxx/POOC-Gatsby"
+        },
+        {
+            "title": "HUGO Ecommerce application",
+            "category": "A simple PoC of ecommerce generate with HUGO and cart create with Snipcart",
+            "image": "landingpage.jpg",
+            "url": "https://github.com/Illuminaxx/ecommerce-hugo-snipcart"
+        },
+        {
+            "title": "Blog (PoC)",
+            "category": "A simple PoC Blog generate with gatsby",
+            "image": "blog.jpg",
+            "url": "https://github.com/Illuminaxx/my-pro-blog"
+        },
+        {
+            "title": "Professional portfolio",
+            "category": "A professional portfolio create with ReactJS . You are in this portfolio",
+            "image": "portfolio.jpg",
+            "url": "https://github.com/Illuminaxx/portfolio-react"
+        },
+        {
+            "title": "Ecommerce with React",
+            "category": "An ecommerce web application create with React and using lambda netlify and Stripe for manage payments .",
+            "image": "ecommerce.jpg",
+            "url": "https://github.com/Illuminaxx/ecommerce"
+        },
+        {
+            "title": "Amazon Clone",
+            "category": "A ecommerce amazon clone build with React and stripe for checkout, and firebase for hosting",
+            "image": "amazon-clone.png",
+            "url": "https://github.com/Illuminaxx/amazon-clone"
+        },  
+        {
             "title": "Custom checkbox",
             "category": "Checkbox customized with CSS",
             "image": "checkbox.jpg",
@@ -157,36 +193,6 @@
             "category": "A taping application write in HTML/CSS/Javascript",
             "image": "drumb.jpg",
             "url": "https://github.com/Illuminaxx/drumb"
-        },
-        {
-            "title": "Gatsby Ecommerce application",
-            "category": "A simple PoC of ecommerce generate with Gatsby and manage with CosmicJS",
-            "image": "homepage.jpg",
-            "url": "https://github.com/Illuminaxx/POOC-Gatsby"
-        },
-        {
-            "title": "HUGO Ecommerce application",
-            "category": "A simple PoC of ecommerce generate with HUGO and cart create with Snipcart",
-            "image": "landingpage.jpg",
-            "url": "https://github.com/Illuminaxx/ecommerce-hugo-snipcart"
-        },
-        {
-            "title": "Blog (PoC)",
-            "category": "A simple PoC Blog generate with gatsby",
-            "image": "blog.jpg",
-            "url": "https://github.com/Illuminaxx/my-pro-blog"
-        },
-        {
-            "title": "Professional portfolio",
-            "category": "A professional portfolio create with ReactJS . You are in this portfolio",
-            "image": "portfolio.jpg",
-            "url": "https://github.com/Illuminaxx/portfolio-react"
-        },
-        {
-            "title": "Ecommerce with React",
-            "category": "An ecommerce web application create with React and using lambda netlify and Stripe for manage payments .",
-            "image": "ecommerce.jpg",
-            "url": "https://github.com/Illuminaxx/ecommerce"
         }
       ]
   },
