@@ -141,10 +141,10 @@
             "url": "https://github.com/Illuminaxx/amazon-clone"
         },  
         {
-            "title": "Custom checkbox",
-            "category": "Checkbox customized with CSS",
-            "image": "checkbox.jpg",
-            "url": "https://github.com/Illuminaxx/custom-checkbox"
+            "title": "Twitter Clone",
+            "category": "Twitter Clone inspired by Clever. Using React, firebase, material UI",
+            "image": "twitter-clone.png",
+            "url": "https://github.com/Illuminaxx/twouitter-clone"
         },
         {
             "title": "Clock UI",
