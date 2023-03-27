@@ -107,19 +107,19 @@
         {
             "title": "Gatsby Ecommerce application",
             "category": "A simple PoC of ecommerce generate with Gatsby and manage with CosmicJS",
-            "image": "homepage.jpg",
+            "image": "homepage.webp",
             "url": "https://github.com/Illuminaxx/POOC-Gatsby"
         },
         {
             "title": "HUGO Ecommerce application",
             "category": "A simple PoC of ecommerce generate with HUGO and cart create with Snipcart",
-            "image": "landingpage.jpg",
+            "image": "landingpage.webp",
             "url": "https://github.com/Illuminaxx/ecommerce-hugo-snipcart"
         },
         {
             "title": "Blog (PoC)",
             "category": "A simple PoC Blog generate with gatsby",
-            "image": "blog.jpg",
+            "image": "blog.webp",
             "url": "https://github.com/Illuminaxx/my-pro-blog"
         },
         {
@@ -131,7 +131,7 @@
         {
             "title": "Ecommerce with React",
             "category": "An ecommerce web application create with React and using lambda netlify and Stripe for manage payments .",
-            "image": "ecommerce.jpg",
+            "image": "ecommerce.webp",
             "url": "https://github.com/Illuminaxx/ecommerce"
         },
         {
@@ -149,31 +149,31 @@
         {
             "title": "Clock UI",
             "category": "A simple clock created with JS HTML CSS",
-            "image": "clock.png",
+            "image": "clock.webp",
             "url": "https://github.com/Illuminaxx/clockTime"
         },
         {
             "title": "Custom progressbar",
             "category": "A custom progress bar realized with hooks react.",
-            "image": "custom-progress-bar.png",
+            "image": "custom-progress-bar.webp",
             "url": "https://github.com/Illuminaxx/custom-progress-react-bar"
         },
         {
             "title": "Progress Bar",
             "category": "Progress bar inspiring by Collect UI Users",
-            "image": "progressbar.jpg",
+            "image": "progressbar.webp",
             "url": "https://github.com/Illuminaxx/progressbar"
         },
         {
             "title": "Newsletter subscriber",
             "category": "This repository contain an newsletter subscriber created with React, and implements an image found in unDraw",
-            "image": "newsletter.png",
+            "image": "newsletter.webp",
             "url": "https://github.com/Illuminaxx/newsletter-subscriber"
         },
         {
             "title": "Face detection",
             "category": "A Face detection with FaceApi library",
-            "image": "facedetection.png",
+            "image": "facedetection.webp",
             "url": "https://github.com/Illuminaxx/recognition-javascript"
         },
         {
@@ -185,13 +185,13 @@
         {
             "title": "Loader animated",
             "category": "Create an loader animated by CSS",
-            "image": "spinner.jpg",
+            "image": "spinner.webp",
             "url": "https://github.com/Illuminaxx/spinner-loader"
         },
         {
             "title": "Drumb application",
             "category": "A taping application write in HTML/CSS/Javascript",
-            "image": "drumb.jpg",
+            "image": "drumb.webp",
             "url": "https://github.com/Illuminaxx/drumb"
         }
       ]
