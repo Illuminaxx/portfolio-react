@@ -261,6 +261,10 @@ ul#nav li.current a { color: #F06000; }
 #resume .header-col { padding-top: 9px; }
 #resume .main-col { padding-right: 10%; }
 
+#resume p {
+   color : #000000;
+}
+
 .education, .work {
    margin-bottom: 48px;
    padding-bottom: 24px;
