@@ -213,7 +213,7 @@ ul#nav li.current a { color: #F06000; }
 }
 #about .contact-details { width: 41.66667%; }
 
-#about .contact-details .address {
+#about .contact-details .address span {
    color: #B8B8B8;
 }
 #about .download {
