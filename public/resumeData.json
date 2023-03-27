@@ -149,7 +149,7 @@
         {
             "title": "Clock UI",
             "category": "A simple clock created with JS HTML CSS",
-            "image": "clock.jpg",
+            "image": "clock.png",
             "url": "https://github.com/Illuminaxx/clockTime"
         },
         {
@@ -167,7 +167,7 @@
         {
             "title": "Newsletter subscriber",
             "category": "This repository contain an newsletter subscriber created with React, and implements an image found in unDraw",
-            "image": "newsletter.jpg",
+            "image": "newsletter.png",
             "url": "https://github.com/Illuminaxx/newsletter-subscriber"
         },
         {
