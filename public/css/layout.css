@@ -840,7 +840,7 @@ call-to-action .button {
    color: #ebeeee;
 }
 
-#contact .coordonnees {
+#contact h1.coordonnees {
    font: 16px/24px 'opensans-bold', sans-serif;
    color: #EBEEEE;
    margin-bottom: 6px;
