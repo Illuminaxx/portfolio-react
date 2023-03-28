@@ -846,6 +846,10 @@ call-to-action .button {
    margin-bottom: 6px;
 }
 
+#contact h1.coordonnees::before {
+   display: none;
+}
+
 #contact h4 {
    font: 16px/24px 'opensans-bold', sans-serif;
    color: #EBEEEE;
