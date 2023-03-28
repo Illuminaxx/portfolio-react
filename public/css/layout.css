@@ -266,6 +266,12 @@ ul#nav li.current a { color: #F06000; }
    color : #000000;
 }
 
+#resume .widget h1 {
+   font: 25px/30px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+
 .education, .work {
    margin-bottom: 48px;
    padding-bottom: 24px;
