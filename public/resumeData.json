@@ -133,12 +133,6 @@
             "category": "An ecommerce web application create with React and using lambda netlify and Stripe for manage payments .",
             "image": "ecommerce.webp",
             "url": "https://github.com/Illuminaxx/ecommerce"
-        },
-        {
-            "title": "Amazon Clone",
-            "category": "A ecommerce amazon clone build with React and stripe for checkout, and firebase for hosting",
-            "image": "amazon-clone.png",
-            "url": "https://github.com/Illuminaxx/amazon-clone"
         },  
         {
             "title": "Twitter Clone",
