@@ -2,20 +2,24 @@ const path = require("path");
 const express = require("express");
 const transporter = require("./config");
 const dotenv = require("dotenv");
+const compression = require('compression');
 dotenv.config();
 const app = express();
 
 const buildPath = path.join(__dirname, "..", "build");
+app.use(compression({
+    level: 9
+}))
 app.use(express.json());
 app.use(express.static(buildPath));
 
 app.post("/api/send", (req, res) => {
-  try {
-    const mailOptions = {
-      from: req.body.email, // sender address
-      to: process.env.G_EMAIL, // list of receivers
-      subject: req.body.subject + ' ' + new Date().toLocaleString(), // Subject line
-      html: `
+    try {
+        const mailOptions = {
+            from: req.body.email, // sender address
+            to: process.env.G_EMAIL, // list of receivers
+            subject: req.body.subject + ' ' + new Date().toLocaleString(), // Subject line
+            html: `
           <!DOCTYPE html>
           <html>
               <head>
@@ -76,29 +80,29 @@ app.post("/api/send", (req, res) => {
               </body>
           </html>
         `
-    };
+        };
 
-    transporter.sendMail(mailOptions, function (err, info) {
-      if (err) {
+        transporter.sendMail(mailOptions, function (err, info) {
+            if (err) {
+                res.status(500).send({
+                    success: false,
+                    message: "Une erreur s'est produite. Réessayez plus tard",
+                });
+            } else {
+                res.send({
+                    success: true,
+                    message: "Merci ! Nous vous recontacterons sous peu",
+                });
+            }
+        });
+    } catch (error) {
         res.status(500).send({
-          success: false,
-          message: "Une erreur s'est produite. Réessayez plus tard",
+            success: false,
+            message: "Une erreur s'est produite. Réessayez plus tard",
         });
-      } else {
-        res.send({
-          success: true,
-          message: "Merci ! Nous vous recontacterons sous peu",
-        });
-      }
-    });
-  } catch (error) {
-    res.status(500).send({
-      success: false,
-      message: "Une erreur s'est produite. Réessayez plus tard",
-    });
-  }
+    }
 });
 
 app.listen(3000, () => {
-  console.log("Server start on port 3000");
+    console.log("Server start on port 3000");
 });
