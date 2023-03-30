@@ -2,14 +2,9 @@ const path = require("path");
 const express = require("express");
 const transporter = require("./config");
 const dotenv = require("dotenv");
-const compression = require('compression');
 dotenv.config();
 const app = express();
 
-
-app.use(compression({
-    level: 9
-}))
 
 const buildPath = path.join(__dirname, "..", "build");
 
