@@ -7,25 +7,25 @@ const Contact = ({ data }) => {
   const [subject, setSubject] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  
+
   const [result, setResult] = useState(null)
 
   const sendEmail = (e) => {
     e.preventDefault();
-    axios.post('/api/send', {name, subject, email, message})
-    .then(response => {
-      setResult(response.data);
-      setName('')
-      setSubject('')
-      setEmail('')
-      setMessage('')
-    })
-    .catch(() => {
-      setResult({
-        success: false,
-        message: 'Try again !'
+    axios.post('/api/send', { name, subject, email, message })
+      .then(response => {
+        setResult(response.data);
+        setName('')
+        setSubject('')
+        setEmail('')
+        setMessage('')
       })
-    })
+      .catch(() => {
+        setResult({
+          success: false,
+          message: 'Try again !'
+        })
+      })
   };
 
   return (
