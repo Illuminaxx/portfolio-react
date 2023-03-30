@@ -1,13 +1,5 @@
 import React, { Component, Suspense } from 'react';
 import $ from 'jquery';
-import './App.css';
-// import Header from './components/Header';
-// import Footer from './components/Footer';
-// import About from './components/About';
-// import Resume from './components/Resume';
-// import Contact from './components/Contact';
-// import Portfolio from './components/Portfolio';
-
 const Header = React.lazy(() => import('./components/Header'));
 const Footer = React.lazy(() => import('./components/Footer'));
 const About = React.lazy(() => import('./components/About'));
