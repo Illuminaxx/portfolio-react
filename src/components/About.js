@@ -40,7 +40,7 @@ class About extends Component {
                      </div>
                      <div className="columns download">
                         <p>
-                           <a href={pdf} className="button" download="CV_aurelien-hennuyer.pdf"><i className="fa fa-download"></i>Obtenir mon CV</a>
+                           <a href={pdf} className="button" download="CV_aurelien-hennuyer.pdf" aria-label='Download curriculum vitae of the owner'><i className="fa fa-download"></i>Obtenir mon CV</a>
                         </p>
                      </div>
                   </div>
